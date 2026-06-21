@@ -1,0 +1,21 @@
+{
+  "name": "hebmu-webvpn-session-keeper",
+  "version": "0.1.0",
+  "private": false,
+  "description": "ScriptCat scheduled userscript for keeping an existing HebMU WebVPN session active.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Walvez/hebmu-webvpn-session-keeper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Walvez/hebmu-webvpn-session-keeper/issues"
+  },
+  "homepage": "https://github.com/Walvez/hebmu-webvpn-session-keeper#readme",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
