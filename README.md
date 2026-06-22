@@ -1,6 +1,6 @@
 # 河北医科大学 WebVPN 登录状态自动续期
 
-这是一个 ScriptCat 定时脚本。用户已经主动登录河北医科大学 WebVPN 后，脚本每 3 小时访问一次已验证的 WebVPN 内部图书馆页面，尽量让现有登录会话保持活跃。
+这是一个 ScriptCat 定时脚本。用户已经主动登录河北医科大学 WebVPN 后，脚本每 2 小时访问一次已验证的 WebVPN 内部图书馆页面，尽量让现有登录会话保持活跃。
 
 ## 安装
 
@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/Walvez/hebmu-webvpn-session-keeper/main/hebmu-
 3. 确认脚本元数据里有这些关键声明：
 
 ```js
-// @crontab      0 */3 * * *
+// @crontab      0 */2 * * *
 // @grant        GM_xmlhttpRequest
 // @connect      webvpn.hebmu.edu.cn
 ```
@@ -31,7 +31,7 @@ https://raw.githubusercontent.com/Walvez/hebmu-webvpn-session-keeper/main/hebmu-
 https://webvpn.hebmu.edu.cn/https/77726476706e69737468656265737421fcfe43d22f356a5d6b468ca88d1b203b/?wrdrecordvisit=1782040210000
 ```
 
-这个 URL 是一个 WebVPN 内部图书馆页面。此前测试中，每 10 分钟访问一次该地址可以持续保持 WebVPN 登录态；当前发布版为了减少请求频率，默认改为每 3 小时访问一次。
+这个 URL 是一个 WebVPN 内部图书馆页面。此前测试中，每 10 分钟访问一次该地址可以持续保持 WebVPN 登录态；3 小时间隔实测不足以后，当前发布版改为每 2 小时访问一次。
 
 ## 边界
 

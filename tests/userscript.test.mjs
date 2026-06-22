@@ -21,7 +21,9 @@ test("declares minimal ScriptCat scheduled-script permissions", () => {
   const meta = metadata(script);
 
   assert.match(meta, /@namespace\s+https:\/\/github\.com\/Walvez\/hebmu-webvpn-session-keeper/);
-  assert.match(meta, /@crontab\s+0 \*\/3 \* \* \*/);
+  assert.match(meta, /@version\s+0\.1\.1/);
+  assert.match(meta, /@description\s+用户主动登录河北医科大学 WebVPN 后，每 2 小时访问一次已验证的内部页面以保持现有会话活跃。/);
+  assert.match(meta, /@crontab\s+0 \*\/2 \* \* \*/);
   assert.match(meta, /@grant\s+GM_xmlhttpRequest/);
   assert.match(meta, /@connect\s+webvpn\.hebmu\.edu\.cn/);
   assert.doesNotMatch(meta, /@require\b/);

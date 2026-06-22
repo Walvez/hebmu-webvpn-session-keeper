@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         河北医科大学 WebVPN 登录状态自动续期
 // @namespace    https://github.com/Walvez/hebmu-webvpn-session-keeper
-// @version      0.1.0
-// @description  用户主动登录河北医科大学 WebVPN 后，每 3 小时访问一次已验证的内部页面以保持现有会话活跃。
+// @version      0.1.1
+// @description  用户主动登录河北医科大学 WebVPN 后，每 2 小时访问一次已验证的内部页面以保持现有会话活跃。
 // @author       Walve
 // @license      MIT
-// @crontab      0 */3 * * *
+// @crontab      0 */2 * * *
 // @grant        GM_xmlhttpRequest
 // @connect      webvpn.hebmu.edu.cn
 // ==/UserScript==
